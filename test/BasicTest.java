@@ -57,4 +57,39 @@ public class BasicTest extends UnitTest {
         assertNotNull(firstPost.postedAt);
     }
 
+    @Test
+    public void postComments() {
+        // Create a new user and save it
+        User ross = new User("ross@gmail.com", "1234", "Ross").save();
+
+        // Create a new post
+        Post rossPost = new Post(ross, "My First Post", "Hello ITC!").save();
+
+        // Post a first comment
+        rossPost.addComment("Nathan", "Cool story, bro.").save();
+        rossPost.addComment("Kevin", "I like math.").save();
+
+        // Count objects
+        assertEquals(1, User.count());
+        assertEquals(1, Post.count());
+        assertEquals(2, Comment.count());
+
+        // Retreive Ross's post
+        rossPost = Post.find("byAuthor", ross).first();
+        assertNotNull(rossPost);
+
+        // Check comments
+        assertEquals(2, rossPost.comments.size());
+        assertEquals("Nathan", rossPost.comments.get(0).author);
+        assertEquals("Kevin", rossPost.comments.get(1).author);
+
+        // Delete post
+        rossPost.delete();
+
+        // Make sure comments were deleted
+        assertEquals(1, User.count());
+        assertEquals(0, Post.count());
+        assertEquals(0, Comment.count());
+    }
+
 }
