@@ -1,5 +1,5 @@
-30 Dec 2013 13:48:32,009 INFO  ~ Starting /Users/nschuchert/yabe
-30 Dec 2013 13:48:32,495 WARN  ~ You're running Play! in DEV mode
-30 Dec 2013 13:48:32,579 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-30 Dec 2013 13:50:51,209 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-30 Dec 2013 13:50:51,871 INFO  ~ Application 'Yet Another Blog Engine' is now started !
+31 Dec 2013 09:12:30,854 INFO  ~ Starting /Users/nschuchert/yabe
+31 Dec 2013 09:12:31,335 WARN  ~ You're running Play! in DEV mode
+31 Dec 2013 09:12:31,413 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+31 Dec 2013 09:12:36,948 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+31 Dec 2013 09:12:37,634 INFO  ~ Application 'Yet Another Blog Engine' is now started !
