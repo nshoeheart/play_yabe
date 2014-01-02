@@ -22,6 +22,7 @@ public class BasicTest extends UnitTest {
         assertNotNull(ross);
         assertEquals("Ross", ross.fullname);
     }
+
     @Test
     public void tryConnectAsUser() {
         // Create a new user and save it
@@ -128,5 +129,36 @@ public class BasicTest extends UnitTest {
         assertEquals(3, frontPost.comments.size());
         assertEquals(4, Comment.count());
     }
+
+    @Test
+    public void testTags() {
+        // Create a new use and save it
+        User ross = new User("ross@gmail.com", "1234", "Ross").save();
+
+        // Create a new Post
+        Post rossPost = new Post(ross, "My First Post", "Hello ITC!").save();
+        Post anotherRossPost = new Post(ross, "Another Post", "Hello again!").save();
+
+        // Make sure no tags exist already
+        assertEquals(0, Post.findTaggedWith("Red").size());
+
+        // Tag the posts
+        rossPost.tagItWith("Red").tagItWith("Blue").save();
+        anotherRossPost.tagItWith("Red").tagItWith("Green").save();
+
+        // Test that the tags work
+        assertEquals(2, Post.findTaggedWith("Red").size());
+        assertEquals(1, Post.findTaggedWith("Blue").size());
+        assertEquals(1, Post.findTaggedWith("Green").size());
+        assertEquals(1, Post.findTaggedWith("Red", "Blue").size());
+        assertEquals(1, Post.findTaggedWith("Red", "Green").size());
+        assertEquals(0, Post.findTaggedWith("Red", "Green", "Blue").size());
+        assertEquals(0, Post.findTaggedWith("Blue", "Green").size());
+
+        // Test the tag cloud
+        List<Map> cloud = Tag.getCloud();
+        assertEquals("[{tag=Blue, pound=1}, {tag=Green, pound=1}, {tag=Red, pound=2}]", cloud.toString());
+    }
+
 
 }

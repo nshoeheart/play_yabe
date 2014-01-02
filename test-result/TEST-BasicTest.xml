@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.509" errors="0" skipped="0" tests="5" name="BasicTest">
-  <testcase classname="BasicTest" name="createAndRetrieveUser" time="0.151">
+<testsuite failures="0" time="0.105" errors="0" skipped="0" tests="6" name="BasicTest">
+  <testcase classname="BasicTest" name="createAndRetrieveUser" time="0.004">
       </testcase>
-  <testcase classname="BasicTest" name="tryConnectAsUser" time="0.012">
+  <testcase classname="BasicTest" name="tryConnectAsUser" time="0.003">
       </testcase>
-  <testcase classname="BasicTest" name="createPost" time="0.029">
+  <testcase classname="BasicTest" name="createPost" time="0.004">
       </testcase>
-  <testcase classname="BasicTest" name="postComments" time="0.04">
+  <testcase classname="BasicTest" name="postComments" time="0.014">
       </testcase>
-  <testcase classname="BasicTest" name="fullTest" time="0.277">
+  <testcase classname="BasicTest" name="fullTest" time="0.062">
+      </testcase>
+  <testcase classname="BasicTest" name="testTags" time="0.018">
       </testcase>
 </testsuite>
