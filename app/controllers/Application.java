@@ -36,6 +36,7 @@ public class Application extends Controller {
             render("Application/show.html", post);
         }
         post.addComment(author, content);
+        flash.success("Thanks for posting, %s", author);
         show(postID);
     }
 }

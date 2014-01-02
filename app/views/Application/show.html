@@ -18,6 +18,10 @@
     #{/if}
 </ul>
 
+#{if flash.success}
+    <p class="success">${flash.success}</p>
+#{/if}
+
 #{display post:post, as:'full' /}
 
 <h3>Post a Comment:</h3>
@@ -25,7 +29,7 @@
 #{form @Application.postComment(post.id)}
 
     #{ifErrors}
-        <p ckass="error">
+        <p class="error">
             All fields are required!
         </p>
     #{/ifErrors}
@@ -42,3 +46,18 @@
         <input type="submit" value="Submit your Comment" />
     </p>
 #{/form}
+
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        // Expose the form
+        $('form').click(function() {
+            $('form').expose({api:true}).load();
+        });
+
+        // If there is an error, focus to form
+        if($('form .error').size()) {
+            $('form').expose({api: true, loadSpeed: 0}).load();
+            $('form input[type=text]').get(0).focus();
+        }
+    });
+</script>
