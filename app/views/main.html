@@ -14,16 +14,27 @@
 
         <div id="header">
             <div id="logo">
-                yabe.
+                <a href="@{Application.index()}" style="color: #ffffff; text-decoration: none;">yabe.</a>
             </div>
             <ul id="tools">
-                <li>
-                    <a href="@{Admin.index()}">Log in to write something</a>
-                </li>
+                #{if isConnected}
+                    <li>
+                        <I>Logged in as ${user}</I>
+                    </li>
+                    <li>
+                        <a href="@{Admin.index()}"><U>Admin Page</U></a>&nbsp;&nbsp;<a href="#"><U>Preferences</U></a>
+                        &nbsp;&nbsp;<a href="@{Secure.logout()}"><U>Log out</U></a>
+                    </li>
+                #{/if}
+                #{else}
+                    <li>
+                        <a href ="@{Admin.index()}"><U>Log in to post and edit preferences</U></a>
+                    </li>
+                #{/else}
             </ul>
             <div id="title">
                 <span class="about">About this blog</span>
-                <h1><a href="@{Application.index()}">${blogTitle}</a></h1>
+                <h1>${blogTitle}</h1>
                 <h2>${blogBaseline}</h2>
             </div>
         </div>

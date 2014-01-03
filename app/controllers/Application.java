@@ -20,6 +20,11 @@ public class Application extends Controller {
 
 
     public static void index() {
+        if (Security.isConnected()) {
+            User user = User.find("byEmail", Security.connected()).first();
+            renderArgs.put("user", user.fullname);
+            renderArgs.put("isConnected", true);
+        }
         Post frontPost = Post.find("order by postedAt desc").first();
         List<Post> olderPosts = Post.find("order by postedAt desc").from(1).fetch(10);
         render(frontPost, olderPosts);

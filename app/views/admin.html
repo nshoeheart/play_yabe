@@ -13,7 +13,7 @@
 
         <div id="header">
             <div id="logo">
-                yabe. <span>administration</span>
+                <a href="@{Application.index()}" style="color: #ffffff; text-decoration: none;">yabe.</a><span>administration</span>
             </div>
             <ul id="tools">
                 <li>
@@ -28,6 +28,7 @@
                 <li class="${request.controller == 'Admin' ? 'selected' : ''}">
                     <a href="@{Admin.index()}">My Posts</a>
                 </li>
+                <!-- Only display these options if user is an Admin-->
                 #{secure.check 'admin'}
                     <li class="${request.controller == 'Posts' ? 'selected' : ''}">
                         <a href="@{Posts.list()}">Posts</a>
