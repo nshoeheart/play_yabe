@@ -64,13 +64,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Security.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Security.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <folding>
-                <element signature="e#492#498#0" expanded="true" />
-              </folding>
+            <state line="8" column="33" selection-start="199" selection-end="199" vertical-scroll-proportion="0.20979021" vertical-offset="0" max-vertical-offset="572">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tags.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Tags.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,19 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/CRUD/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="8" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -111,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/messages">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.24691358" vertical-offset="0" max-vertical-offset="972">
+            <state line="16" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -123,7 +121,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/Admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="75" selection-end="75" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+            <state line="3" column="17" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
               <folding />
             </state>
           </provider>
@@ -132,7 +130,7 @@
       <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1874" selection-end="1874" vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="930">
+            <state line="45" column="0" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -181,7 +179,6 @@
         <option value="$PROJECT_DIR$/app/views/main.html" />
         <option value="$PROJECT_DIR$/app/views/Application/index.html" />
         <option value="$PROJECT_DIR$/app/views/Admin/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/Security.java" />
         <option value="$PROJECT_DIR$/app/views/admin.html" />
         <option value="$PROJECT_DIR$/app/controllers/Comments.java" />
         <option value="$PROJECT_DIR$/app/controllers/Posts.java" />
@@ -190,6 +187,7 @@
         <option value="$PROJECT_DIR$/app/views/CRUD/layout.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/secure.css" />
         <option value="$PROJECT_DIR$/conf/messages" />
+        <option value="$PROJECT_DIR$/app/controllers/Security.java" />
       </list>
     </option>
   </component>
@@ -228,6 +226,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -508,8 +508,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -542,7 +540,34 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RunManager" selected="Remote.Play">
+    <configuration default="false" name="All in Yet Another Blog Engine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Yet Another Blog Engine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -764,7 +789,7 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
+    <configuration default="false" name="Play" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
@@ -778,15 +803,47 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Remote.Unnamed" />
+    <configuration default="false" name="Unnamed (1)" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in Yet Another Blog Engine" />
+      <item index="1" class="java.lang.String" itemvalue="Remote.Play" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.Unnamed (1)" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Yet Another Blog Engine" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c89bfcb6-fe74-4365-b605-8d670d57fd90" name="Default" comment="" />
@@ -798,11 +855,12 @@
       <workItem from="1388674117642" duration="14694000" />
       <workItem from="1388691416510" duration="9524000" />
       <workItem from="1388761002354" duration="3707000" />
+      <workItem from="1388766404540" duration="2140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58959000" />
+    <option name="totallyTimeSpent" value="61099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2571" y="278" width="1529" height="1090" extended-state="0" />
@@ -816,12 +874,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39963832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3987976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33066133" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -857,20 +916,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="690">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
@@ -927,17 +975,13 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
@@ -978,17 +1022,13 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
@@ -1040,20 +1080,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="27" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/listTagged.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420">
-          <folding />
-        </state>
+        <state line="20" column="12" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/dependencies.yml">
@@ -1077,9 +1106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/tags.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="7" column="1" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
@@ -1105,9 +1132,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Comments/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="57" selection-start="351" selection-end="351" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="948">
-          <folding />
-        </state>
+        <state line="12" column="57" selection-start="351" selection-end="351" vertical-scroll-proportion="0.18987341" vertical-offset="0" max-vertical-offset="948" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.java">
@@ -1133,32 +1158,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="75" selection-end="75" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+        <state line="3" column="17" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="e#492#498#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1874" selection-end="1874" vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="930">
+        <state line="45" column="0" selection-start="1874" selection-end="1874" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/Application/show.html">
@@ -1174,13 +1188,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Tags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="72" selection-end="72" vertical-scroll-proportion="0.061728396" vertical-offset="0" max-vertical-offset="972">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,14 +1211,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
+        <state line="15" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/CRUD/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="8" column="15" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -1225,7 +1232,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/messages">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.24691358" vertical-offset="0" max-vertical-offset="972">
+        <state line="16" column="20" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="27" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.82365364" vertical-offset="0" max-vertical-offset="947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Tags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/play-1.2.6/framework/src/play/classloading/enhancers/LocalvariablesNamesEnhancer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="394" column="0" selection-start="17142" selection-end="17142" vertical-scroll-proportion="0.33208954" vertical-offset="5267" max-vertical-offset="7365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Security.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="199" selection-end="199" vertical-scroll-proportion="0.20979021" vertical-offset="0" max-vertical-offset="572">
           <folding />
         </state>
       </provider>
