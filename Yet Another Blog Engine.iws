@@ -408,6 +408,7 @@
     <property name="SearchEverywhereHistory" value="" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="LayoutCode.rearrangeEntriesYaml" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../icon-dashboard/icon-dashboard.ipr" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -738,12 +739,12 @@
       <workItem from="1388761002354" duration="3707000" />
       <workItem from="1388766404540" duration="18040000" />
       <workItem from="1389020210237" duration="11712000" />
-      <workItem from="1389105714692" duration="7729000" />
+      <workItem from="1389105714692" duration="8325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96440000" />
+    <option name="totallyTimeSpent" value="97036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2573" y="268" width="1529" height="1090" extended-state="0" />
