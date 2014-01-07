@@ -5,12 +5,18 @@ User(bob):
     password:       secret
     fullname:       Bob
     isAdmin:        true
-    backColor:      default
 
 User(jeff):
     email:          jeff@gmail.com
     password:       secret
     fullname:       Jeff
+
+Preference(bob):
+    user:           bob
+    backColor:      orange
+
+Preference(jeff):
+    user:           jeff
     backColor:      default
 
 Tag(play):

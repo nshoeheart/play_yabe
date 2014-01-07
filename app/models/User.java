@@ -16,15 +16,18 @@ public class User extends Model {
     @Required
     public String password;
 
+    @Required
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    public Preference preferences;
+
     public String fullname;
     public boolean isAdmin;
-    public String backColor;
 
     public User(String email, String password, String fullname) {
         this.email = email;
         this.password = password;
         this.fullname = fullname;
-        this.backColor = "default";
+        preferences = new Preference(this);
     }
 
     public static User connect(String email, String password) {
@@ -35,7 +38,7 @@ public class User extends Model {
         return email;
     }
 
-    public void changeBackColor(String backColor) {
-        this.backColor = backColor;
-    }
+//    public void changeBackColor(String backColor) {
+//        preferences.changeBackgroundColor(backColor);
+//    }
 }

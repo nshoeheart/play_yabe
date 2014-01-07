@@ -20,20 +20,12 @@ public class Application extends Yabe {
 
 
     public static void index() {
-//        if (Security.isConnected()) {
-//            User user = User.find("byEmail", Security.connected()).first();
-//            renderArgs.put("user", user);
-//        }
         Post frontPost = Post.find("order by postedAt desc").first();
         List<Post> olderPosts = Post.find("order by postedAt desc").from(1).fetch(10);
         render(frontPost, olderPosts);
     }
 
     public static void show(Long id) {
-//        if (Security.isConnected()) {
-//            User user = User.find("byEmail", Security.connected()).first();
-//            renderArgs.put("user", user);
-//        }
         Post post = Post.findById(id);
         String randomID = Codec.UUID();
         render(post, randomID);
@@ -45,10 +37,6 @@ public class Application extends Yabe {
             @Required(message="A message is required") String content,
             @Required(message="Please type the code") String code,
             String randomID) {
-//        if (Security.isConnected()) {
-//            User user = User.find("byEmail", Security.connected()).first();
-//            renderArgs.put("user", user);
-//        }
         Post post = Post.findById(postID);
         validation.equals(code, Cache.get(randomID)).message("Invalid code. Please type it again");
         if (validation.hasErrors()) {
@@ -75,16 +63,14 @@ public class Application extends Yabe {
     }
 
     public static void preferences() {
-//        User user = User.findById(id);
         render();
     }
 
     public static void changeBackgroundColor(@Required String backColor) {
-//        User user = User.findById(id);
         if (validation.hasErrors()) {
             render("Application/preferences.html");
         }
-        user.changeBackColor(backColor);
+        user.preferences.backColor = backColor;
         user.save();
         render("Application/preferences.html", user);
     }
