@@ -28,19 +28,19 @@
 
 #{form @Application.postComment(post.id)}
 
-    #{ifErrors}
-        <p class="error">
-            ${errors[0]}
-        </p>
-    #{/ifErrors}
+        #{ifErrors}
+            <p class="error">
+                ${errors[0]}
+            </p>
+        #{/ifErrors}
 
     <p>
         <label for="author">Your name: </label>
-        <input type="text" name="author" id="author" />
+        <input type="text" name="author" id="author" #{if flash.author != null}value="${flash.author}"#{/if}/>
     </p>
     <p>
         <label for="content">Your message: </label>
-        <textarea name="content" id="content"></textarea>
+        <textarea name="content" id="content" >#{if flash.content != null}${flash.content}#{/if}</textarea>
     </p>
     <p>
         <label for="code">Please type the code below: </label>

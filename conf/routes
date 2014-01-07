@@ -4,10 +4,12 @@
 
 # Home page
 GET     /                                       Application.index
-GET     /posts/{<[0-9]+>id}                     Application.show
-POST    /posts/{postId}/comments                Application.postComment
+GET     /posts/{id}                             Application.show
+POST    /posts/{postID}/comments                Application.postComment
 GET     /captcha                                Application.captcha
 GET     /posts/{tag}                            Application.listTagged
+GET     /preferences/{id}                       Application.preferences
+POST    /preferences/{id}/change                Application.changeBackgroundColor
 
 # Administration
 GET     /admin/?                                Admin.index

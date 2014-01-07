@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html #{if user != null}id="${user.backColor}" #{/if} #{else}id="default"#{/else}>
     <head>
         <title>Administration</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,6 +16,7 @@
                 <a href="@{Application.index()}" style="color: #ffffff; text-decoration: none;">yabe.</a><span>administration</span>
             </div>
             <ul id="tools">
+                <li><I>Logged in as ${user.fullname}</I></li>
                 <li>
                     <a href="@{Secure.logout()}">Log out</a>
                 </li>

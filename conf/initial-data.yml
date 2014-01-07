@@ -5,11 +5,13 @@ User(bob):
     password:       secret
     fullname:       Bob
     isAdmin:        true
+    backColor:      default
 
 User(jeff):
     email:          jeff@gmail.com
     password:       secret
     fullname:       Jeff
+    backColor:      default
 
 Tag(play):
     name:           Play

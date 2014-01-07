@@ -9,5 +9,7 @@ import play.db.jpa.*;
 @Entity
 public class Preference extends Model {
 
+    @Required
+    @OneToOne
     public String backColor;
 }

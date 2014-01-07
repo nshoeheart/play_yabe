@@ -18,11 +18,13 @@ public class User extends Model {
 
     public String fullname;
     public boolean isAdmin;
+    public String backColor;
 
     public User(String email, String password, String fullname) {
         this.email = email;
         this.password = password;
         this.fullname = fullname;
+        this.backColor = "default";
     }
 
     public static User connect(String email, String password) {
@@ -31,5 +33,9 @@ public class User extends Model {
 
     public String toString() {
         return email;
+    }
+
+    public void changeBackColor(String backColor) {
+        this.backColor = backColor;
     }
 }

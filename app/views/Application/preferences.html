@@ -1,0 +1,33 @@
+#{extends 'main.html' /}
+#{set title: 'Preferences' /}
+
+<ul>
+    <li>You can edit your preferences on this page.</li>
+    <br />
+    <li>Your current background color (in hexadecimal format) is ${user.backColor}.</li>
+</ul>
+
+#{form @Application.changeBackgroundColor()}
+
+    #{ifErrors}
+        <p class="error">
+            ${errors[0]}
+        </p>
+    #{/ifErrors}
+
+    <p>
+        <label for="backColor">New background color: </label>
+        <select name="backColor">
+            <option value="default">Blue (default)</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+
+#{/form}

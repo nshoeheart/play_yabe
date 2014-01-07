@@ -1,7 +1,7 @@
 /** Main layout **/
 
 html, body {
-    background: #364B66 !important;
+    /*background: #364B66 !important;*/
     font-family: Helvetica, Arial, Sans !important;
 }
 
@@ -9,6 +9,30 @@ body {
     width: 900px;
     padding: 0 30px;
     margin: auto;
+}
+
+#default {
+    background: #364B66;
+}
+
+#black {
+    background: #000000;
+}
+
+#red {
+    background: #FF0000;
+}
+
+#yellow {
+    background: #FFFF00;
+}
+
+#green {
+    background: #00FF00;
+}
+
+#orange {
+    background: #FFA500;
 }
 
 /** Blog header **/
